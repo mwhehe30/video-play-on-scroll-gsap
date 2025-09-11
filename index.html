@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Video Scroll Scrubbing</title>
+    <link rel="preload" as="video" href="src/assets/videos/put.mp4" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main>
+      <div
+        id="text-container"
+        class="fixed -top-1/4 left-0 w-screen h-screen z-50 pointer-events-none"
+      >
+        <div
+          class="text-wrapper absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex flex-col justify-center items-center origin-center"
+        >
+          <h1
+            class="main-title text-4xl md:text-5xl lg:text-7xl font-semibold text-center text-gradient text-glow tracking-tight leading-tight max-w-[90%] px-4 origin-center text-transparent bg-gradient-to-tr from-black from-0% to-orange-100 to-100% bg-clip-text"
+          >
+            Designed with precision, built for performance, and made for you.
+          </h1>
+          <p class="text-3xl text-neutral-700">
+            From sleek aesthetics to powerful capabilities, it redefines what a
+            phone can be — simple, elegant, and truly yours.
+          </p>
+        </div>
+      </div>
+
+      <section id="container">
+        <div class="video-wrapper">
+          <video id="vpos" playsinline preload="auto" muted loading="lazy">
+            <source src="src/assets/videos/put.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="after-video">yey akhirya jadi lek</section>
+      <section class="after-video">ini adalah section</section>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

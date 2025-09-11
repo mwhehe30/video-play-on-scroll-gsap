@@ -1,0 +1,20 @@
+{
+  "name": "vpos-",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.8",
+    "tailwindcss": "^4.1.11"
+  }
+}
